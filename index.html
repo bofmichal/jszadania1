@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>zestaw 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/newcss.css" type="text/css" />
+    </head>
+    <body>
+        <!--zadanie1-->
+        <div class="zadania">
+            Zadanie 1 - Program powinien wyświetlać jakiś uniwersalny komunikat 
+            powitalny oraz pole do wprowadzenia nazwy użytkownika. Po wpisaniu 
+            nazwy i naciśnięciu przycisku "OK", powinien zostać wyświetlony komunikat 
+            "Witaj, użytkowniku [...]", zawierający wprowadzoną nazwę użytkownika
+            <p>Wpisz swoje imię: <input type="text" id="zad1"/>
+            <input type="button" onclick="klik1()" value="kliknij" id="z1"/>
+            </p>     
+            <div>Witaj: <span id="wynik1"></span></div>
+        </div>
+        <!--zadanie2-->
+        <div class="zadania">
+            zadanie 2 - Program powinien pozwolić na wpisanie dwóch wartości 
+            liczbowych i po naciśnięciu przycisku "OK" powinien wyświetlić wynik
+            pięciu podstawowych operacji matematycznych (+ - * / %).
+            <p>Wpisz pierwszą liczbę(L1): <input type="text" id="zad2"/>
+               Wpisz drugą liczbę(L2): <input type="text" id="zad22"/>
+            <input type="button" onclick="klik2()" value="kliknij"/>
+            </p>
+            <p>Wynik dodawania (L1+L2) to: <span id="dodawanie"></span></p>
+            <p>Wynik odejmowania (L1-L2) to: <span id="odejmowanie"></span></p>
+            <p>Wynik mnożenia (L1*L2) to: <span id="mnozenie"></span></p>
+            <p>Wynik dzielenia (L1/L2) to: <span id="dzielenie"></span></p>
+            <p>Wynik reszty z dzielenia to: <span id="reszta"></span></p>
+        </div>
+        <!--zadanie2*-->
+        <div class="zadania">
+            zadanie 2* - Wykonaj to samo, ale dla dwóch losowych liczb z przedziału 1-20
+            <p>Losowa liczba od 1-20 (L1): <span id="out1"></span></p>
+        <p>Losowa liczba od 1-20(L2): <span id="out2"></span></p>
+            <input type="button" onclick="losowanie()" value="kliknij"/>
+            
+            <p>Wynik dodawania (L1+L2) to: <span id="dodawaniea"></span></p>
+            <p>Wynik odejmowania (L1-L2) to: <span id="odejmowaniea"></span></p>
+            <p>Wynik mnożenia (L1*L2) to: <span id="mnozeniea"></span></p>
+            <p>Wynik dzielenia (L1/L2) to: <span id="dzieleniea"></span></p>
+            <p>Wynik reszty z dzielenia to: <span id="resztaa"></span></p>
+        </div>
+         <!--zadanie3-->
+         <div class="zadania">
+             Zadanie 3 - Program powinien pozwalać na wykonanie rzutu kością - naciskamy 
+             przycisk "rzuć", a poniżej wyświetla się komunikat o wylosowanej 
+             wartości z przedziału 1-6
+             <p>Losowa liczba od 1-6 (L1): <span id="out3"></span></p>
+        
+            <input type="button" onclick="rzut()" value="rzuć"/>
+         </div>
+         <!--zadanie3*-->
+         <div class="zadania">
+             Zadanie 3* - Pozwól na wskazanie dowolnego przedziału z którego 
+             losowana jest liczba (pole "od" i "do")
+             <p>Przedział od: <input type="text" id="pod"/>
+               Przedział do: <input type="text" id="pdo"/>
+            <input type="button" onclick="losuj()" value="losuj"/>
+            </p>
+            <p>Wynik losowania to: <span id="wylosowana"></span></p>
+         </div>
+         <!--zadanie4-->
+         <div class="zadania">
+             Zadanie 4 - Program powinien pozwolić na przeliczanie jednostek 
+             z centymetrów na cale - do dyspozycji mamy dwa pola tekstowe (jedno na 
+             wartość w cm, drugie na wartość w calach) oraz dwa przyciski - na naciśnięciu 
+             jednego wartość podana w cm jest przeliczana na cale i wpisywana w 
+             drugim polu, po naciśnięciu drugiego - na odwrót. Cal to 2,54 cm
+             <p>Wpisz wartość w cm: <input type="text" id="centy"/><span id="wynikcal"></span>
+                 <input type="button" onclick="cmnacal()" value="cm to cal"/></p>
+             <p>Wpisz wartość w calach: <input type="text" id="cale"/><span id="wynikcm"></span>
+                 <input type="button" onclick="calnacm()" value="cal to cm"/></p>       
+          </div>
+         <!--zadanie 5-->
+         <div class="zadania">
+             Zadanie 5 - Program powinien wyświetlać sumę pieniędzy odłożoną na 
+             koncie (początkowo 0), pole tekstowe na wprowadzenie kwoty oraz dwa 
+             przyciski - wpłać i wypłać. Po naciśnięciu jednego kwota dodawana jest 
+             do środków na koncie (a wyświetlana wartość jest aktualizowana), po 
+             naciśnięciu drugiego - odejmowana.
+             <p>Saldo konta: <span id="saldo">0</span></p>
+             <p>Wpisz kowotę: <input type="text" id="kwota"/></p>
+             <input type="button" onclick="wplac()" value="wpłać"/>
+             <input type="button" onclick="wyplac()" value="wypłać"/>
+         </div>
+        
+        <script type="text/javascript" src="js/newjs.js"></script>
+    </body>
+</html>
